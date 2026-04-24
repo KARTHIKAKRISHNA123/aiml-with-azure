@@ -14,8 +14,8 @@ client = OpenAI(
 response = client.chat.completions.create(
     model=deployment_name,
     messages=[
-        {"role": "system", "content": "You are a code expert."},
-        {"role": "user", "content": "give me the optimised code for bubble sort algorithm in python."},
+        {"role": "system", "content": "You are a code expert and helpful assistant."},
+        {"role": "user", "content": "Give a simple python code example to read a file and print its content."}
     ],
 
 )
